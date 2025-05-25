@@ -16,7 +16,7 @@ $sql_cursos = "SELECT c.nombre, c.modalidad, c.nivel, n.nombre_nivel, i.fecha_in
                FROM inscripciones i
                JOIN cursos c ON i.id_curso = c.id_curso
                JOIN niveles n ON c.nivel = n.id_nivel
-               WHERE i.id_usuario = $id_usuario AND i.estado = 'activo'";
+               WHERE i.id_usuario = $id_usuario AND i.estado = 'activa'";
 $res_cursos = mysqli_query($conexion, $sql_cursos);
 ?>
 

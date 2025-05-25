@@ -11,7 +11,7 @@ if (!isset($_SESSION['id_usuario'])) {
 // 2. Obtenemos los datos
 $id_usuario = $_SESSION['id_usuario'];
 $nickname = $_SESSION['nickname'];
-$estado = "activo";
+$estado = "activa";
 
 if (!isset($_GET['id_curso']) || !is_numeric($_GET['id_curso'])) {
     echo "<p style='color:red;'>Curso no válido. ❌</p>";
