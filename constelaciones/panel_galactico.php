@@ -68,6 +68,7 @@ $res_usuarios = mysqli_query($conexion, $sql_usuarios);
           <td><?php echo $u['correo']; ?></td>
           <td>
             <a href="eliminar_usuario.php?id=<?php echo $u['id_usuario']; ?>" onclick="return confirm('¿Eliminar este usuario?')">🗑️</a>
+            <a href="detalle_usuario.php?id=<?php echo $u['id_usuario']; ?>">🔍</a>
           </td>
         </tr>
         <?php endwhile; ?>
