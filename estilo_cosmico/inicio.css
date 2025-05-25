@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background: url('../universo_visual/fondo_estelar.png') center center / cover no-repeat fixed;
+}
+
+.galaxia-fondo {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  min-height: 100vh;
+}
+
+.avatar-galactico {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.avatar-galactico img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.frase-ani {
+  text-align: center;
+  font-family: 'Bangers', cursive;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.ilustracion-central {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.ilustracion-central img {
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+/* Carrusel general */
+.carrusel {
+  width: 90%;
+  max-width: 960px;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Contenedor interno de slides */
+.imagenes-carrusel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Slide individual */
+.slide {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Imagen dentro del slide */
+slide img {
+  max-height: 350px;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+/* Flechas de navegación */
+.anterior, .siguiente {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.anterior:hover, .siguiente:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.anterior {
+  left: 10px;
+}
+
+.siguiente {
+  right: 10px;
+}
+
+/* Botones inferiores */
+.botones-ani {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.botones-ani a {
+  background-color: #4CC9F0;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  width: 160px;
+  box-shadow: 0 0 10px white;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.botones-ani a:hover {
+  transform: scale(1.1);
+  background-color: #F72585;
+  color: white;
+}
+
+.botones-ani img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Flotar animado */
+.imagen-flotante {
+  animation: flotar 6s ease-in-out infinite;
+}
+
+@keyframes flotar {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #3A0CA3, #4361EE);
+  color: white;
+}
+
+.panel-galactico {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.panel-galactico h1,
+.panel-galactico h2 {
+  text-align: center;
+  font-family: 'Bangers', cursive;
+  margin-bottom: 20px;
+}
+
+.acciones-panel {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.btn-admin {
+  background-color: #4CC9F0;
+  color: black;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 0 10px white;
+  transition: all 0.3s ease;
+}
+
+.btn-admin:hover {
+  background-color: #F72585;
+  color: white;
+  transform: scale(1.05);
+}
+
+.bloque {
+  margin-bottom: 40px;
+}
+
+.bloque table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bloque th,
+.bloque td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.bloque th {
+  background-color: rgba(0,0,0,0.3);
+  font-weight: bold;
+}
+
+.bloque tr:hover {
+  background-color: rgba(255,255,255,0.05);
+}
+
+.formulario-edicion,
+.formulario-creacion {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: rgba(255, 255, 255, 0.07);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.formulario-edicion h2,
+.formulario-creacion h2 {
+  text-align: center;
+  font-family: 'Bangers', cursive;
+  margin-bottom: 20px;
+}
+
+.formulario-edicion label,
+.formulario-creacion label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.formulario-edicion input,
+.formulario-edicion textarea,
+.formulario-edicion select,
+.formulario-creacion input,
+.formulario-creacion textarea,
+.formulario-creacion select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+
+button[type="submit"] {
+  margin-top: 20px;
+  background-color: #4CC9F0;
+  color: black;
+  font-weight: bold;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #F72585;
+  color: white;
+}

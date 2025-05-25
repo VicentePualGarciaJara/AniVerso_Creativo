@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #9B5DE5, #00BBF9);
+  color: white;
+  text-align: center;
+}
+
+.contenedor-catalogo {
+  padding: 40px;
+}
+
+.contenedor-catalogo h1 {
+  font-family: 'Bangers', cursive;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.contenedor-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.tarjeta-curso {
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 15px;
+  width: 260px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta-curso:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #F15BB5;
+}
+
+.tarjeta-curso img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.tarjeta-curso h2 {
+  font-size: 20px;
+  margin: 10px 0 5px;
+}
+
+.tarjeta-curso p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.tarjeta-curso a {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #00F5D4;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.tarjeta-curso a:hover {
+  background-color: #F15BB5;
+  color: white;
+}
